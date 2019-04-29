@@ -30,7 +30,7 @@ The dashboard displays an overview about:
 
 3. Navigate to the Users Tab
 
-![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/5.PNG)
+![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/5.png)
 
 The user interface enables the following capabilities:
 
@@ -46,7 +46,7 @@ The user interface enables the following capabilities:
 
 4. Navigate to the Groups Tab
 
-![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/6.PNG)
+![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/6.png)
 
 The user interface enables the following capabilities:
 * Add Group
@@ -57,7 +57,7 @@ The user interface enables the following capabilities:
 
 5. Navigate to the Applications Tab
 
-![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/7.PNG)
+![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/7.png)
 
 The user interface enables the following capabilities for applications:
 * Add 
@@ -69,7 +69,7 @@ The user interface enables the following capabilities for applications:
 
 6. Navigate to the Jobs tab
 
-![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/8.PNG)
+![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/8.png)
 
 The Jobs tab displays jobs that has been run, f.e. an Application Role Memberships Export
 
@@ -77,13 +77,13 @@ The Jobs tab displays jobs that has been run, f.e. an Application Role Membershi
 
 7. Navigate to the Reports tab
 
-![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/9.PNG)
+![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/9.png)
 
 The reports interface gives the capabilities to navigate to reports regarding users and applications.
 
 8. Click on Successful Login Attempts
 
-![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/10.PNG)
+![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/10.png)
 
 Here you can see the Successful Login Attempts. It is also possible to change the Date Range and Download the Report. 
 
@@ -91,7 +91,7 @@ Here you can see the Successful Login Attempts. It is also possible to change th
 
 9. Click on Settings on the sidebar
 
-![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/11.PNG)
+![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/11.png)
 
 The top down menu enables the navigation to the following sections:
 * Default Settings
@@ -141,7 +141,7 @@ Manage schema for Identity Cloud Service user
 
 10. Click on Security
 
-![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/12.PNG)
+![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/12.png)
 
 The top down menu enables the navigation to the following sections:
 
@@ -189,37 +189,37 @@ Configure delegated authentication for bridges associated with Microsoft Active 
 
 11. Navigate to the users tab and click on Add to create a new user.
 
-![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/13.PNG)
+![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/13.png)
 
 12. Type in the ncessary information and click on next. It is also possible to finish the process already, but the next already enables group assignments. 
 
-![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/14.PNG)
+![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/14.png)
 
 13. Assign the user to the OCI_Administrators group
 
-![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/15.PNG)
+![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/15.png)
 
 In step 2 its possible to assign users to groups already. 
 
 14. Navigate back to the user tab and click in the created user
 
-![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/16.PNG)
+![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/16.png)
 
 You can also assign the user to a group or application in the displayed interface. 
 
 15. Click on your user on the top right corner and on My Home to navigate back to the home dashboard
 
-![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/17.PNG)
+![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/17.png)
 
 16. Click in Users to reach User Management
 
-![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/18.PNG)
+![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/18.png)
 
 **User Roles**
 
 17. Click and the newly created user and then roles.
 
-![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/19.PNG)
+![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/19.png)
 
 For the user to have service entitlements and/or access to the instances, it is necessary to assign a role (admin or user. You can do it manually for each service / instance or add the role to all services / instances with one click.
 
@@ -229,18 +229,18 @@ For the user to have service entitlements and/or access to the instances, it is 
 
 19. Navigate to the OCI Identiy management. One way would be to click on Atonomous Data Warehouse under services and then scroll down to Identity 
 
-![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/20.PNG)
-![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/21.PNG)
+![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/20.png)
+![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/21.png)
 
 Some services require users in the OCI environment with an AuthT oken. One example would be a user than can access the Object Storage Buckets, f.e. for manual backups. 
 
 20. Click on create user and fill out the necessary information
 
-![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/22.PNG)
+![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/22.png)
 
 21. Navigate to the Auth Tokens tab on the left-hand side. 
 
-![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/23.PNG)
+![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/23.png)
 
 22. Click on generate Auth Token, fill in a description and click generate Token
 
@@ -250,7 +250,7 @@ Make sure to copy and save the Auth Token somewhere in a safe and dedicated plac
 
 23. Scroll up and navigate back to the Identity tab. Then click on Compartments
 
-![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/24.PNG)
+![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/24.png)
 
 A collection of related resources. Compartments are a fundamental component of Oracle Cloud Infrastructure for organizing and isolating your cloud resources. You use them to clearly separate resources for the purposes of measuring usage and billing, access (through the use of policies), and isolation (separating the resources for one project or business unit from another). A common approach is to create a compartment for each major part of your organization. The compartments are herarchisch, meaning it starts with the root and branches out to child compartments, which can have their own child compartments. 
 
@@ -258,7 +258,7 @@ A collection of related resources. Compartments are a fundamental component of O
 
 24. Navigate to the Policies tab
 
-![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/25.PNG)
+![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/25.png)
 
 A document that specifies who can access which resources, and how. Access is granted at the group and compartment level, which means you can write a policy that gives a group a specific type of access within a specific compartment, or to the tenancy itself. If you give a group access to the tenancy, the group automatically gets the same type of access to all the compartments inside the tenancy. For more information, see Example Scenario and How Policies Work. The word "policy" is used by people in different ways: to mean an individual statement written in the policy language; to mean a collection of statements in a single, named "policy" document (which has an Oracle Cloud ID (OCID) assigned to it); and to mean the overall body of policies your organization uses to control access to resources.
 
