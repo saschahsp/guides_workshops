@@ -2,7 +2,7 @@
 
 1.  Navigate to the User Management Interface (top right)
 
-\1png
+![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/1.PNG)
 
 2. Navigate to the Identity Console (top right)
 
