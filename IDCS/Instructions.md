@@ -10,9 +10,9 @@
 
 The Identity Cloud Console has multiple tabs (with the right access). 
 
-![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/3.PNG)
+![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/3.png)
 
-![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/4.PNG)
+![](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/4.png)
 
 The dashboard displays an overview about:
 
