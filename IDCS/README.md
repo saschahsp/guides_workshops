@@ -2,8 +2,7 @@
 
 Administrators and users can use Oracle Identity Cloud Service to help them effectively and securely create, manage, and use a cloud-based identity management environment without worrying about setting up any infrastructure or platform details.
 
-![IDCS](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/idcs_1.png)
-
+![IDCS](https://github.com/saschahsp/guides_workshops/blob/master/IDCS/img/idcs_1.png)
 1. Integrate Identity Management into your custom applications using open APIs.
 2. Integrate with any application using open standards - **OpenID Connect**, **SAML**, **OAuth** and **SCIM**.
    **OAuth** (Open Authorization) is an open standard for token-based authentication and authorization on the Internet
