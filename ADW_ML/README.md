@@ -111,5 +111,5 @@ Machine learning can also help detect fraud and minimize identity theft.
 * Based on Apache Zeppelin
 * Common UI for data scientists across multiple services
 
-\1
+![(https://github.com/saschahsp/guides_workshops/blob/master/ADW_ML/img/1.PNG)]
 
