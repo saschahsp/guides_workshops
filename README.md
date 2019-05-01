@@ -59,6 +59,8 @@ Ideally, the data region should be as close to your cloud service users as possi
 
 For some specific countries, you might have to select a specific data center or keep in mind certain restrictions. See Data Regions for Platform and Infrastructure Services, and review the notes at the bottom of the page, which list the additional considerations when selecting a data region.
 
+availability domains / sinan 
+
 ****
 
 ### Oracle Cloud Terminology
