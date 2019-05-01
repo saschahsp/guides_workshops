@@ -82,3 +82,34 @@ Machine learning can also help detect fraud and minimize identity theft.
 
 ## Collaborative Interface
 
+* Based on Apache Zeppelin
+* Allows creation of workspaces, projects, and notebooks
+* Provides a browser-based interactive data analysis environment to develop, document, share, and automate analytical methodologies
+* Notebooks execute in Zeppelin Servers and make secure (TCPS) JDBC connections to Autonomous Data Warehouse for data access.
+
+## OML User Administration Application
+
+* Web based administrative UI for managing (list, create, update, delete) Oracle Machine Learning users
+* OML users map to Autonomous Data Warehouse database users
+* Access to OML User Management is limited to the administrator
+
+## OML Application
+
+* Web based application for data scientists 
+* Allows for creation of workspaces, projects, and notebooks 
+* Notebook execution happens in Zeppelin servers 
+
+## Zeppelin Server 
+
+* Edit and run notebooks 
+* Secure (TCPS) JDBC connections to Autonomous Data Warehouse database for data access
+
+## Oracle Machine Learning: Built-in Notebook
+
+* Collaborative UI for data scientists
+  * Easy access to shared notebooks, templates, permissions, scheduler, etc.
+* Based on Apache Zeppelin
+* Common UI for data scientists across multiple services
+
+\1
+
