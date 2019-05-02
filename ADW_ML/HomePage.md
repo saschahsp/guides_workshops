@@ -64,8 +64,5 @@ The Example Templates page displays the following information about the template
 * Number of creations 
 * Number of static views
 
-## Workspace Hierarchy
-
-![](https://github.com/saschahsp/guides_workshops/blob/master/ADW_ML/img/2.PNG)
 
 
