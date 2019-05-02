@@ -3,16 +3,33 @@
 The Oracle Machine Learning home page is the default landing page when you log in to Oracle Machine Learning. The home page provides you quick links to important interfaces, and the **log of your high-level recent activities**. 
 
 In the home page, you can access: 
-* The Quick Actions links to: Run SQL Statements 
-* Run SQL Scripts 
-* Notebooks 
-* Jobs 
-* Examples 
+* The Quick Actions links to: 
+    * Run SQL Statements 
+    * Run SQL Scripts 
+    * Notebooks 
+    * Jobs 
+    * Examples 
 * The log of your Recent Activities. 
 * The application navigation by clicking on the top left corner of the home page. 
 * The options to select and create new projects, access recent projects, manage workspace, and set workspace permissions by clicking on the top right corner of the home page. 
 * The Learning Resources in the right pane of the home page. 
 * The Recent Notebooks in the right pane of the home page.
+
+![](https://github.com/saschahsp/guides_workshops/blob/master/ADW_ML/img/4.PNG)
+
+To left tiles will let you navigate to:
+
+* Home
+* Notebooks
+*  Template
+    * Personal
+    * Shared
+    * Examples
+* Jobs
+* Connection Group
+* Notebook Sessions
+
+![](https://github.com/saschahsp/guides_workshops/blob/master/ADW_ML/img/5.PNG)
 
 ## Running SQL Statements
 
@@ -47,4 +64,8 @@ The Example Templates page displays the following information about the template
 * Number of creations 
 * Number of static views
 
+## Workspace Hierarchy
+
 ![](https://github.com/saschahsp/guides_workshops/blob/master/ADW_ML/img/2.PNG)
+
+
