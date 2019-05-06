@@ -59,3 +59,25 @@ The `ALGO_NAME setting` specifies the model algorithm.
 
 The values for the `ALGO_NAME` setting are listed in the following table.
 
+![](https://github.com/saschahsp/guides_workshops/blob/master/ADW_ML/img/44.PNG)
+
+![](https://github.com/saschahsp/guides_workshops/blob/master/ADW_ML/img/45.PNG)
+
+## DBMS_DATA_MINING — Automatic Data Preparation
+
+Oracle Data Mining supports fully Automatic Data Preparation (ADP, user-directed general data preparation, and user-specified embedded data preparation. The `PREP_*` settings enable the user to request fully automated or user-directed general data preparation. By default, fully Automatic Data Preparation (`PREP_AUTO_ON`) is enabled.
+
+When you enable Automatic Data Preparation, the model uses heuristics to transform the build data according to the requirements of the algorithm. Instead of fully Automatic Data Preparation, the user can request that the data be shifted and/or scaled with the `PREP_SCALE*` and `PREP_SHIFT*` settings. The transformation instructions are stored with the model and reused whenever the model is applied. Refer to Model Detail Views, Oracle Data Mining User’s Guide.
+
+You can choose to supplement Automatic Data Preparations by specifying additional transformations in the `xform_list` parameter when you build the model. ~~(See "CREATE_MODEL Procedure".)~~
+
+If you do not use Automatic Data Preparation and do not specify transformations in the `xform_list` parameter to CREATE_MODEL, you must implement your own transformations separately in the build, test, and scoring data. You must take special care to implement the exact same transformations in each data set.
+
+If you do not use Automatic Data Preparation, but you do specify transformations in the `xform_list` parameter to `CREATE_MODEL`, Oracle Data Mining embeds the transformation definitions in the model and prepares the test and scoring data to match the build data.
+
+The values for the `PREP_*` setting are described in the following table.
+
+![](https://github.com/saschahsp/guides_workshops/blob/master/ADW_ML/img/46.PNG)
+
+
+
