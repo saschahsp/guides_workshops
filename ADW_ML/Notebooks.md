@@ -102,7 +102,7 @@ SET SQLFORMAT format_option
 For example, if you want the output in ansiconsole format, then type the command followed by the SQL query as:
 ```sql
 SET SQLFORMAT ansiconsole;
-SELECT * FROM HR.EMPLOYEES;
+SELECT CUST_ID, CUST_CITY FROM SH.CUSTOMERS;
 ```
 
 The output format is ansiconsole, and the table name is HR.EMPLOYEES.
@@ -113,38 +113,73 @@ Note: This formatting is available for the Script interpreter and you must add t
 
 **Output Formats Supported by the `SET SQLFORMAT` Command**
 
+---
 **CSV** — The CSV format produces standard comma-separated variable output, with string values enclosed in double quotes
 ```sql
 %script
 SET SQLFORMAT CSV
 ```
+---
 **HTML** - The HTML format produces the HTML for a responsive table. The content of the table changes dynamically to match the search string entered in the text field
 ```sql
 %script
 SET SQLFORMAT HTML
 ```
+---
 **XML** — The XML format produces a tag based XML document. All data is presented as CDATA tags.
 ```sql
 %script 
 SET SQLFORMAT XML 
 ```
+---
 **JSON** - The JSON format produces a JSON document containing the definitions of the columns along with the data that it contains 
 ```sql
 %script 
 SET SQLFORMAT JSON
 ```
+---
 **ANSICONSOLE** — The ANSICONSOLE format resizes the columns to the width of the data to save space. It also underlines the columns, instead of separate line of output.  
 ```sql 
 %script 
 SET SQLFORMAT ANSICONSOLE
 ```
+---
 **INSERT** — The INSERT format produces the INSERT statements that could be used to recreate the rows in a table. 
 ```sql
 %script 
 SET SQLFORMAT INSERT
 ```
+---
 **LOADER** — The LOADER format produces pipe delimited output with string values enclosed in double quotes. The column names are not included in the output.  
 ```sql
 %script 
 SET SQLFORMAT LOADER
 ```
+---
+**DELIMITED** — The DELIMITED format allows you to manually define the delimiter string, and the characters that are enclosed in the string values.
+
+The syntax is: 
+```sql
+%script 
+SQLFORMAT DELIMITED delimiter left_enclosure right_enclosure 
+```
+For example, 
+```sql
+%script 
+SET SQLFORMAT DELIMITED ~del~ " " 
+SELECT * FROM emp WHERE deptno = 20; 
+```
+
+Output: 
+```
+"EMPNO"~del~"ENAME"~del~"JOB"~del~"MGR"~del~"HIREDATE"~del~"SAL"~del~"COMM"~del~"
+DEPTNO"
+```
+---
+**DEFAULT** — The DEFAULT option clears all previous SQLFORMAT settings, and returns to the default output. The syntax is: 
+```sql
+%script 
+SET SQLFORMAT DEFAULT 
+```
+
+**Note:** You can also execute this command without the format name DEFAULT by simply typing SET SQLFORMAT. 
