@@ -1,10 +1,16 @@
 # Autonomous Data Warehouse - Machine Learning
 
+This guide is to get comfortable with ADW(/ATP) Machine Learning. 
+
+Parts of this guide were taken from the Virtual Class: **Using Oracle Machine Learning with Autonomous Database**
+
+Link: https://education.oracle.com/using-oracle-machine-learning-with-autonomous-database/courP_11084
+
+If you like this content, consider taking the mentioned class. 
+
 Services for this guide:
 
-* Oracle Autonomous Data Warehouse
-* Oracle Autonomous Transactional Processing
-* Oracle Analytics Cloud
+* Oracle Autonomous Data Warehouse or Oracle Autonomous Transactional Processing
 
 ## Overview
 
