@@ -214,7 +214,6 @@ END;
 
 ```sql
 %sql
-
 select * from nb_confusion_matrix;
 ```
 
