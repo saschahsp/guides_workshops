@@ -1,0 +1,28 @@
+sudo firewall-cmd --add-port=8080/tcp
+
+
+oci os object put \
+-bn bigdatalite \
+--file /mnt/d/BigDataLite \
+--name BigDataLite 
+
+export PATH=/home/opc/anaconda3/bin/:$PATH
+
+su -c "vncserver -depth 32 -geometry 1024x768" oracle
+
+master=local[*]
+
+
+https://confluence.oraclecorp.com/confluence/display/ACTCKB/EMEA+Proxima+City+Demo
+
+
+https://www.thegeekdiary.com/how-to-configure-vnc-server-on-oracle-linux-6/
+https://www.rootusers.com/how-to-increase-the-size-of-a-linux-lvm-by-expanding-the-virtual-machine-disk/
+
+
+   Device Boot      Start         End      Blocks   Id  System
+/dev/sda1   *           1          64      512000   83  Linux
+Partition 1 does not end on cylinder boundary.
+/dev/sda2              64        5100    40446976   8e  Linux LVM
+/dev/sda3            5100        7648    20472560   8e  Linux LVM
+/dev/sda4            7649        8864     9767520   83  Linux
