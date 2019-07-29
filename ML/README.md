@@ -4,6 +4,8 @@
 
 [Link](https://www.oracle.com/technetwork/database/options/oml/overview/index.html)
 
+[Github](https://github.com/saschahsp/guides_workshops/tree/master/ADW_ML)
+
 Apache Zeppelin based Machine Learning SQL Notebook for Data Scientists to Collaborate in the Oracle Autonomous Data Warehouse
 
 * Collaborative SQL notebook UI for data scientists  
