@@ -21,10 +21,10 @@ The fingerprint for the key will be displayed.
 `
 [DEFAULT]
 user=<user OCID>    
-fingerprint=<API key fingerprint>   
-key_file=   
-    C:\\Users\\shagedor\\Documents\\.oci\\oci_api_key.pem f.e. for Windows  
-    /home/oracle/.oci/oci_api_key.pem f.e. for Linux    
-tenancy=<tenancy OCDI>  
-region=eu-frankfurt-1   
+    fingerprint=<API key fingerprint>   
+    key_file=   
+        C:\\Users\\shagedor\\Documents\\.oci\\oci_api_key.pem f.e. for Windows  
+        /home/oracle/.oci/oci_api_key.pem f.e. for Linux    
+    tenancy=<tenancy OCDI>  
+    region=eu-frankfurt-1   
 `
