@@ -18,7 +18,7 @@ The fingerprint for the key will be displayed.
 * Create a folder f.e. `.oci`
 * Create a file `config` with the following content:
 
-`
+```
 [DEFAULT]
    user= **user OCID**
    fingerprint= **API key fingerprint**
@@ -27,4 +27,4 @@ The fingerprint for the key will be displayed.
        **/home/oracle/.oci/oci_api_key.pem f.e. for Linux**    
 tenancy= **tenancy OCDI**  
 region= **eu-frankfurt-1**   
-`
+```
