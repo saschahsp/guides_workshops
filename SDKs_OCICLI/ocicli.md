@@ -16,6 +16,16 @@ oci os object put \
 --parallel-upload-count <maximum_number_parallel_uploads> (optional)
 ```
 
+For example:
+
+```bash
+oci os object put \
+-ns mytenency \
+-bn samplebucket \
+--file /home/oracle/tmp/test.txt \
+--name test.txt \
+```
+
 To download a file from the object storage. 
 
 * `-bn` - bucketname
