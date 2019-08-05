@@ -20,6 +20,11 @@ First we need to import the libraries.
 import filecmp
 import oci
 from oci.object_storage.models import CreateBucketDetails
+import os
+import pandas as pd
+import io
+from PIL import Image
+from io import StringIO
 ```
 
 Load the config file.
@@ -41,98 +46,97 @@ Display some information.
 ```python
 compartment_id = config["tenancy"]
 print(compartment_id)
-
 object_storage = oci.object_storage.ObjectStorageClient(config)
 print(object_storage)
-
 namespace = object_storage.get_namespace().data
 print(namespace)
 ```
 
-Define test variables. 
+Define bucket.  
 
 ```python
 bucket_name = "sommeruni"
-object_name = "test.txt"
-my_data = "Hello, World!"
+bucket = object_storage.get_bucket(namespace, bucket_name)
 ```
 
-Create a bucket (can obviously be skipped if a bucket already exists)
+Get object list. 
 
 ```python
-print("Creating a new bucket {!r} in compartment {!r}".format(bucket_name, compartment_id))
-request = CreateBucketDetails()
-request.compartment_id = compartment_id
-request.name = bucket_name
-bucket = object_storage.create_bucket(namespace, request)
+object_list = object_storage.list_objects(namespace, bucket_name)
+for o in object_list.data.objects:
+    print(o.name)
 ```
 
-Create a file and write the content into the file. 
+Upload new file.
 
 ```python
-print("Uploading new object {!r}".format(object_name))
-obj = object_storage.put_object(
-    namespace,
-    bucket_name,
-    object_name,
-    my_data)
+with open('home/oracle/uploadnewfile.txt', 'r') as f:
+    obj = object_storage.put_object(namespace, bucket_name, 'uploadnewfile.txt', f)
 ```
 
-Get the file into your python environment. 
+Download file and save it locally.
 
 ```python
-same_obj = object_storage.get_object(
-    namespace,
-    bucket_name,
-    object_name)
-print(same_obj)
-
-print("{!r} == {!r}: {}".format(
-    my_data, same_obj.data.content,
-    my_data == same_obj.data.content))
-```
-
-Upload a sample file to the object storage
-
-```python
-print('Uploading a file to object storage')
-
-# First create a sample file
-sample_content = b'a' * 1024 * 1024 * 5
-with open('example_file', 'wb') as f:
-    f.write(sample_content)
-```
-
-Upload a local file to the object storage. 
-
-```python
-# Then upload the file to Object Storage
-example_file_object_name = 'newtest.txt'
-with open('/home/oracle/newtest.txt', 'rb') as f:
-    obj = object_storage.put_object(namespace, bucket_name, example_file_object_name, f)
-```
-
-Retrieve the file, streaming it into another file in 1 MiB chunks
-
-```python
-print('Retrieving file from object storage')
-get_obj = object_storage.get_object(namespace, bucket_name, example_file_object_name)
-with open('example_file_retrieved', 'wb') as f:
+object_name = "bag01.jpg"
+destination_dir = '/home/oracle/tmp'.format(object_name) 
+get_obj = object_storage.get_object(namespace, bucket_name, object_name)
+with open(os.path.join(destination_dir,object_name), 'wb') as f:
     for chunk in get_obj.data.raw.stream(1024 * 1024, decode_content=False):
         f.write(chunk)
-
-print('Uploaded and downloaded files are the same: {}'.format(filecmp.cmp('/home/oracle/newtest.txt', 'example_file_retrieved')))
 ```
 
-Commands to clean the environment.
+Download file and write it into a variable.
 
 ```python
-print("Deleting object {}".format(object_name))
-object_storage.delete_object(namespace, bucket_name, object_name)
-
-print("Deleting object {}".format(example_file_object_name))
-object_storage.delete_object(namespace, bucket_name, example_file_object_name)
-
-print("Deleting bucket {}".format(bucket_name))
-object_storage.delete_bucket(namespace, bucket_name)
+#object_name = "bag01.jpg"
+object_name = "newtest.txt"
+#destination_dir = '/home/oracle/tmp'.format(object_name) 
+get_obj = object_storage.get_object(namespace, bucket_name, object_name)
+for chunktest in get_obj.data.raw.stream(1024 * 1024, decode_content=False):
+    chunktest
 ```
+
+It is saved as bytes.
+
+```python
+print(type(chunktest))
+chunktest
+```
+
+For images. Convert to PIL image.
+
+```python
+imageStream = io.BytesIO(chunktest)
+imageFile = Image.open(imageStream)
+type(imageFile)
+print(imageFile.size)
+```
+
+Display image.
+
+```python
+imageFile
+```
+
+For txt/csv/... files. 
+
+```python
+s=str(chunktest,'utf-8')
+data = StringIO(s)
+type(data)
+```
+
+This data is an IO String.
+
+```python
+contents = data.getvalue()
+contents
+```
+
+We can read the IO String with pandas and create a Pandas Dataframe
+
+```python
+df=pd.read_csv(data)
+df
+```
+
