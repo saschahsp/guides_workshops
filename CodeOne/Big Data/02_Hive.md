@@ -329,5 +329,5 @@ Let's have a look.
 ```sh
 %sh
 
-hadoop fs -ls oci://bigdataprep@sehubpilot/citibike/raw/test3.csv/
+hadoop fs -ls oci://bigdataprep@sehubpilot/citibike/raw/one_part.csv/
 ```
