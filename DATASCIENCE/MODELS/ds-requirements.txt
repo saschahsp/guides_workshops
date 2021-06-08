@@ -197,7 +197,7 @@ pbr==5.4.4
 pep8==1.7.1
 pexpect==4.7.0
 pickleshare==0.7.5
-Pillow==6.2.1
+Pillow==8.2.0
 plac==0.9.6
 plotly==4.1.0
 pluggy==0.13.1
