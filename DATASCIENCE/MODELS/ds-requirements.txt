@@ -179,7 +179,7 @@ numpydoc==0.9.1
 oci==2.6.2+preview.1.923
 oci-cli==2.6.10+preview.1
 olefile==0.46
-opencv-python==4.1.2.30
+opencv-python==4.2.0.32
 opencv-python-headless==4.1.2.30
 openpyxl==3.0.2
 packaging==19.2
